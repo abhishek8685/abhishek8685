@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone.com</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/342cf64192.js" crossorigin="anonymous"></script>
+</head>
+
+<body >
+    <div class="main">
+        <!---<div class="navbar">-->
+        <div class="icon">
+
+            <h1 class="logo"><span>Smart</span>Phone</h1>
+            <div class="menu">
+                <ul>
+                   
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="contact.html" target="_blank">Contact-Us</a></li>
+
+                </ul>
+            </div>
+            <div class="search-box">
+                <input type="search" placeholder="  Find Your Phone" id="search-txt" onchange="openpage()">
+                <a href="#" class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                     
+                </a>
+        
+            </div>
+
+        </div>
+<!---<div class="content">-->
+        <div class="content">
+            
+                <h1>smart<span>Phone</span> <br></h1>
+                <p> 
+                    
+                </p>
+               
+        </div>
+            <button class="btn1"><a href="product.html">View More</a> </button>
+        </div>
+
+    </div>
+<!---<div class="script">-->
+    <script>
+         function openpage(){
+         var x= document.getElementById("search-txt").value;
+         if(x==="iphone4"){
+             window.open("/iphone4.html");
+         }
+         else{
+             if(x==="iphone13"){
+             window.open("/iphone13.html");
+         }
+         else{
+             alert("please enter valid input")
+         }
+         }
+        }
+
+    </script>
+</body>
+
+</html>
